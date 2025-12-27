@@ -1,5 +1,6 @@
-import { pluginVue } from '@rsbuild/plugin-vue';
-import { defineConfig } from '@rstest/core';
+import path from 'node:path'
+import { pluginVue } from '@rsbuild/plugin-vue'
+import { defineConfig } from '@rstest/core'
 
 // Docs: https://rstest.rs/config/
 export default defineConfig({
@@ -12,4 +13,9 @@ export default defineConfig({
   ],
   testEnvironment: 'jsdom',
   setupFiles: ['./rstest.setup.js'],
-});
+  resolve: {
+    alias: {
+      '@': path.resolve(__dirname, './src'),
+    },
+  },
+})

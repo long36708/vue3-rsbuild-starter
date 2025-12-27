@@ -1,7 +1,22 @@
+<script setup>
+import { ref } from 'vue'
+import { add } from '@/utils/add.js'
+
+const count = ref(0)
+
+function increment() {
+  count.value = add(count.value, 1)
+}
+</script>
+
 <template>
   <div class="content">
     <h1>Rsbuild with Vue</h1>
     <p>Start building amazing things with Rsbuild.</p>
+    {{ count }}
+    <button @click="increment">
+      +1
+    </button>
   </div>
 </template>
 
