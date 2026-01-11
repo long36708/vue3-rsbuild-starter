@@ -21,7 +21,12 @@
     "@antfu/eslint-config": "^6.7.3",
     "@commitlint/cli": "^20.2.0",
     "@commitlint/config-conventional": "^20.2.0",
-    "@rsbuild/core": "^1.6.14",
+    "@rsbuild/core": "^1.7.2",
+    "@rsbuild/plugin-babel": "^1.0.6",
+    "@rsbuild/plugin-basic-ssl": "^1.2.1",
+    "@rsbuild/plugin-check-syntax": "^1.6.0",
+    "@rsbuild/plugin-node-polyfill": "^1.4.2",
+    "@rsbuild/plugin-sass": "^1.4.0",
     "@rsbuild/plugin-vue": "^1.2.1",
     "@rstest/core": "^0.7.2",
     "@testing-library/dom": "^10.4.1",
@@ -32,6 +37,7 @@
     "jsdom": "^27.3.0",
     "lefthook": "^2.0.13",
     "oxlint": "^1.35.0",
+    "longmo-unplugin-info": "^1.0.0",
     "unplugin-oxlint": "^0.7.5"
   }
 }
